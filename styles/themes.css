@@ -1,6 +1,70 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', sans-serif;
+  --main-weight-card-text: 400;
+  --weight-card-title: 700;
+  --themes-background-color: #fff;
+  --themes-main-color: #000;
+  --themes-background-image-inline: #d3d3d3;
+  --themes-background-image-block-start: #e7e7e7;
+  --themes-background-image-block-end: #1a1a1a;
+  --text-shadow-color: #fff; 
+  --themes-button-color: #fff;
+}
+
+:root.theme-dark {
+  --main-weight-card-text: 465;
+  --weight-card-title: 785;
+  --themes-background-color: #000;
+  --themes-main-color: #00cc14;
+  --themes-background-image-inline: #000;
+  --themes-background-image-block-start: #007f0c;
+  --themes-background-image-block-end: #004306;
+  --text-shadow-color: #000; 
+  --themes-button-color: #00cc14;
+}
+
+.page.theme_light {
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', sans-serif;
+  --main-weight-card-text: 400;
+  --weight-card-title: 700;
+  --themes-background-color: #fff;
+  --themes-main-color: #000;
+  --themes-background-image-inline: #d3d3d3;
+  --themes-background-image-block-start: #e7e7e7;
+  --themes-background-image-block-end: #1a1a1a;
+  --text-shadow-color: #fff; 
+  --themes-button-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-weight-card-text: 465;
+    --weight-card-title: 785;
+    --themes-background-color: #000;
+    --themes-main-color: #00cc14;
+    --themes-background-image-inline: #000;
+    --themes-background-image-block-start: #007f0c;
+    --themes-background-image-block-end: #004306;  
+    --text-shadow-color: #000; 
+    --themes-button-color: #00cc14;
+  }
+  
+}
+
+.page.theme_dark {
+  --main-weight-card-text: 465;
+  --weight-card-title: 785;
+  --themes-background-color: #000;
+  --themes-main-color: #00cc14;
+  --themes-background-image-inline: #000;
+  --themes-background-image-block-start: #007f0c;
+  --themes-background-image-block-end: #004306;
+  --text-shadow-color: #000;
+  --themes-button-color: #00cc14; 
+
+  background-image: 
+    linear-gradient(var(--themes-background-image-block-start, #e7e7e7), var(--themes-background-image-block-end,#1a1a1a));
+}
+

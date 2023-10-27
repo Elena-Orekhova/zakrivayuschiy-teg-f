@@ -2,7 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -14,6 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header__title">&lt;/html&gt;</h1>
+      <h2 class="header__subtitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +46,78 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__picture-wrapper">
+          <picture>
+            <source srcset="./images/image.avif 1x, ./images/image-2x.avif 2x"
+            type="image/avif">
+            <source srcset="./images/image.webp 1x, ./images/image-2x.webp 2x"
+            type="image/webp">
+            <img loading="lazy" 
+            class="card__image"
+            src="./images/image.png"
+            srcset="./images/image.png 1x, ./images/image-2x.png 2x" 
+            alt="Красно-белый фургончик на фиолетовом фоне в пиксельном представлении.">
+          </picture>
+          <p class="card__picture-label">&lt;/html&gt;</p>
+        </div>
+        <div class="card__content">
+          <p class="card__paragraph">
+            Это было самое начало пути. 
+            На этом этапе важно было проникнуться основами и настроиться на учёбу. 
+            И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__paragraph">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+        <div class="card__wrapper-button">
+          <button class="card__icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="currentColor">
+              <path d="M12 6H9V9H12V6Z" />
+              <path d="M15 6H12V9H15V6Z" />
+              <path d="M9 9H6V12H9V9Z" />
+              <path d="M9 12H6V15H9V12Z" />
+              <path d="M9 15H6V18H9V15Z" />
+              <path d="M18 6H15V9H18V6Z" />
+              <path d="M12 18H9V21H12V18Z" />
+              <path d="M15 21H12V24H15V21Z" />
+              <path d="M18 24H15V27H18V24Z" />
+              <path d="M27 6H30V9H27V6Z" />
+              <path d="M24 6H27V9H24V6Z" />
+              <path d="M30 9H33V12H30V9Z" />
+              <path d="M30 12H33V15H30V12Z" />
+              <path d="M30 15H33V18H30V15Z" />
+              <path d="M21 6H24V9H21V6Z" />
+              <path d="M27 18H30V21H27V18Z" />
+              <path d="M24 21H27V24H24V21Z" />
+              <path d="M21 24H24V27H21V24Z" />
+              <path d="M21 9H18V12H21V9Z" />
+              <path d="M21 27H18V30H21V27Z" />
+            </svg>
+          </button>
+          <button class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <button class="footer__button">
+        <svg viewBox="0 0 40 40"
+          class="footer__button-floppy-save"
+          xmlns="http://www.w3.org/2000/svg">
+          <use href="svg/floppy.svg#floppy">
+        </svg>
+        <span class="button__text">
+          Сохранить на память
+        </span>
+      </button>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
