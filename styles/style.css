@@ -108,12 +108,12 @@
   max-inline-size: 700px;
 }
 
-.card__title { 
-  border-block-end: 2px solid var(--themes-main-color); 
+.card__title {
+  border-block-end: 2px solid var(--themes-main-color);
   padding: 5px 10px;
   font-size: var(--main-font-size);
   line-height: normal;
-  font-variation-settings: var(--weight-card-text);
+  font-variation-settings: var(--weight-card-title);
 }
 
 .card__picture-wrapper {
@@ -182,7 +182,7 @@
   padding: 25px;
 }
 
-.card__paragraph:not(:last-of-type){
+.card__paragraph:not(:last-of-type) {
   margin-block-end: 27px;
 }
 
@@ -256,7 +256,7 @@
 .footer__button::after {
   content: '' ;
   position: absolute;
-  top: 0;  
+  top: 0;
   left: 0;
   display: block;
   height: 100%;
@@ -310,7 +310,7 @@ dialog::backdrop {
   background: #000;
 } 
 
-@supports((text-stroke: 1px var(--text-shadow-color)) or (-webkit-text-stroke: 1px var(--text-shadow-color))){
+@supports((text-stroke: 1px var(--text-shadow-color)) or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   .card__picture-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-shadow-color);
