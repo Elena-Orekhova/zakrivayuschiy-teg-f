@@ -12,9 +12,9 @@
     url(../fonts/Inter.woff2) format('woff2 supports variations'),
     url(../fonts/Inter.woff2) format('woff2-variations');
   font-variation-settings: 
-  'wght' 400,
-  'wght' 465,
-  'wght' 700,
-  'wght' 785;
+    'wght' 400,
+    'wght' 465,
+    'wght' 700,
+    'wght' 785;
   font-display: swap;
 }
