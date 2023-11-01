@@ -310,12 +310,6 @@ dialog::backdrop {
   background: #000;
 } 
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-font);
-  }
-} 
-
 @supports((text-stroke: 1px var(--text-shadow-color)) or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   .card__picture-label {
     text-shadow: none;
