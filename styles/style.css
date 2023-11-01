@@ -16,7 +16,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--main-weight-card-text);
+  font-variation-settings: 'wght' var(--main-weight-card-text);
 }
 
 .header {
@@ -113,7 +113,7 @@
   padding: 5px 10px;
   font-size: var(--main-font-size);
   line-height: normal;
-  font-variation-settings: var(--weight-card-title);
+  font-variation-settings: 'wght' var(--weight-card-title);
 }
 
 .card__picture-wrapper {
@@ -308,6 +308,12 @@ dialog[open] {
 dialog::backdrop {
   opacity: 0.75;
   background: #000;
+} 
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font);
+  }
 } 
 
 @supports((text-stroke: 1px var(--text-shadow-color)) or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
