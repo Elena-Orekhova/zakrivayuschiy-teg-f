@@ -1,6 +1,6 @@
 :root.theme-light {
   --main-font: 'Inter', sans-serif;
-  --accent-font: 'PressStart2P', sans-serif;
+  --accent-font: 'PressStart2P', fantasy;
   --main-weight-card-text: 400;
   --weight-card-title: 700;
   --themes-background-color: #fff;
@@ -26,7 +26,7 @@
 
 .page.theme_light {
   --main-font: 'Inter', sans-serif;
-  --accent-font: 'PressStart2P', sans-serif;
+  --accent-font: 'PressStart2P', fantasy;
   --main-weight-card-text: 400;
   --weight-card-title: 700;
   --themes-background-color: #fff;

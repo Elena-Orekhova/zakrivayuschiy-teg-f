@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <a class="header__title">&lt;/html&gt;</a>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -52,7 +52,7 @@
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="card__picture-wrapper ">
+        <div class="card__picture-wrapper">
           <picture>
             <source srcset="./images/preparation.avif 1x, ./images/preparation-2x.avif 2x"
             type="image/avif">
@@ -104,7 +104,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -168,7 +168,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -231,7 +231,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -293,7 +293,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -354,7 +354,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -416,7 +416,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -478,7 +478,7 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -542,14 +542,14 @@
                 fill="var(--heart-color)"/>
             </svg>
           </button>
-          <button class="card__like-button window">
+          <button class="card__like-button window button-curtain">
             <span class="button__text">Like</span>
           </button>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <button class="footer__button window"
+      <button class="footer__button window button-curtain"
         type="button"
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id">
@@ -562,18 +562,18 @@
           Сохранить на память
         </span>
       </button>
-      <dialog id="dialog-id" class="window footer__dialog">
+      <dialog id="dialog-id" class="window">
         <svg viewBox="0 0 40 40"
-          class="footer__button-floppy-save"
+          class="dialog-icon"
           xmlns="http://www.w3.org/2000/svg">
           <use href="svg/floppy.svg#floppy"></use>
         </svg>
         <p>Вставьте дискету, чтобы продолжить</p>
-        <button class="dialog-button"
-          type="button" 
-          onclick="window['dialog-id'].close()">
-            ок
-        </button>
+        <form method="dialog" class="dialog-button">
+          <button class="close-button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
