@@ -341,7 +341,7 @@ dialog::backdrop {
   transform: scaleX(0);
 }
 
-.close-button:hover::after  {
+.close-button:hover::after {
   transform: scaleX(1);
   animation: underline 0.5s ease-in-out forwards;
 }
